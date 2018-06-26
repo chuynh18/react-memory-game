@@ -44,6 +44,13 @@ class App extends React.Component {
         this.randomize(friends);
     };
 
+    componentDidMount() {
+        this.randomize(friends);
+        this.setState({
+            score: 0
+        });
+    };
+
     render() {
         return (
             <div>

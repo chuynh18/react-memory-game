@@ -2,7 +2,7 @@
     display: inline-block;
 }
 
-.currentScore, .highScore {
+.currentScore, .highScore, .messageArea {
     float: left;
     margin-right: 100px;
 }

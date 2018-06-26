@@ -10,7 +10,7 @@ const Scorebar = props => (
             High score:  {props.highScore}
         </div>
         <div className="messageArea">
-
+            {props.highScore === 12 ? "Nice job!" : ""}
         </div>
     </div>
 );
