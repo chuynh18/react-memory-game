@@ -1,60 +1,60 @@
 [{
     "id": 1,
     "name": "Bean",
-    "src": "/images/bean.jpg"
+    "src": "./images/bean.jpg"
 },
 {
     "id": 2,
     "name": "Chicken",
-    "src": "/images/chicken.jpg"
+    "src": "./images/chicken.jpg"
 },
 {
     "id": 3,
     "name": "Coach (sfm)",
-    "src": "/images/coach.jpg"
+    "src": "./images/coach.jpg"
 },
 {
     "id": 4,
     "name": "Druid (Mystery of the Druids",
-    "src": "/images/druid.jpg"
+    "src": "./images/druid.jpg"
 },
 {
     "id": 5,
     "name": "Cmdr. Shepard (sfm)",
-    "src": "/images/shepard.jpg"
+    "src": "./images/shepard.jpg"
 },
 {
     "id": 6,
     "name": "Shrek (sfm)",
-    "src": "/images/shrek.jpg"
+    "src": "./images/shrek.jpg"
 },
 {
     "id": 7,
     "name": "Sigma",
-    "src": "/images/sigma.jpg"
+    "src": "./images/sigma.jpg"
 },
 {
     "id": 8,
     "name": "Mr. Skeltal",
-    "src": "/images/skeltal.jpg"
+    "src": "./images/skeltal.jpg"
 },
 {
     "id": 9,
     "name": "Spongebob (Pamtri)",
-    "src": "/images/sponge.jpg"
+    "src": "./images/sponge.jpg"
 },
 {
     "id": 10,
     "name": "The Bottle (Cool 3D World)",
-    "src": "/images/thebottle.jpg"
+    "src": "./images/thebottle.jpg"
 },
 {
     "id": 11,
     "name": "Mel Gibson (Cool 3D World's The Egg)",
-    "src": "/images/theegg.jpg"
+    "src": "./images/theegg.jpg"
 },
 {
     "id": 12,
     "name": "Adam Jensen/Yao Ming",
-    "src": "/images/yaojensen.jpg"
+    "src": "./images/yaojensen.jpg"
 }]
