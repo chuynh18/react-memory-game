@@ -1,6 +1,7 @@
 import React from 'react';
 import Wrapper from "./components/Wrapper";
 import Card from "./components/Card";
+import Scorebar from "./components/Scorebar";
 import friends from "./friends.json";
 import './App.css';
 
@@ -21,24 +22,47 @@ class App extends React.Component {
         return array;
     };
 
-    callRandomize = () => {
-        this.setState({score: this.state.score + 1})
+    executeGameLogic = (id) => {
+        if (this.state.clicked.indexOf(id) === -1) {
+            this.setState({
+                clicked: this.state.clicked.concat(id),
+                score: this.state.score + 1
+            });
+            if (this.state.score >= this.state.highScore) {
+                this.setState({highScore: this.state.highScore + 1});
+            }
+            else {
+                this.setState({highScore: this.state.highScore});
+            }
+        }
+        else {
+            this.setState({
+                clicked: [],
+                score: 0
+            });
+        }
         this.randomize(friends);
     };
 
     render() {
         return (
-            <Wrapper>
-                {this.state.friends.map(friend =>
-                    {return <Card
-                        key = {friend.id}
-                        id = {friend.id}
-                        name = {friend.name}
-                        image = {friend.src}
-                        randomize = {this.callRandomize}
-                    ></Card>}
-                )}
-            </Wrapper>
+            <div>
+                <Scorebar
+                    currentScore = {this.state.score}
+                    highScore = {this.state.highScore}
+                />
+                <Wrapper>
+                    {this.state.friends.map(friend =>
+                        {return <Card
+                            key = {friend.id}
+                            id = {friend.id}
+                            name = {friend.name}
+                            image = {friend.src}
+                            gameLogic = {this.executeGameLogic}
+                        ></Card>}
+                    )}
+                </Wrapper>
+            </div>
         )
     };
 };

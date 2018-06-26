@@ -1,0 +1,8 @@
+.scorebar {
+    display: inline-block;
+}
+
+.currentScore, .highScore {
+    float: left;
+    margin-right: 100px;
+}

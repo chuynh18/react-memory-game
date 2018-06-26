@@ -2,7 +2,7 @@ import React from "react";
 import "./Card.css";
 
 const Card = props => (
-  <div className="card" onClick={props.randomize}>
+  <div className="card" onClick={() => props.gameLogic(props.id)}>
     <div className="img-container">
       <img alt={props.name} src={props.image} />
     </div>
